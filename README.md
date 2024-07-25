@@ -2,4 +2,9 @@
 
 A fun app that provides random cat facts and images. Built with React
 
-Check it out -> https://onlycatfacts.netlify.app/
+## Features
+Facts: Click to uncover fun facts about cats with just a click.
+Photos: Enjoy random snapshots of the cutest cats around.
+
+## Deployment
+Check out the live version and get your daily dose of cat cuteness at [your-deployment-url.netlify.app.](https://onlycatfacts.netlify.app/)
