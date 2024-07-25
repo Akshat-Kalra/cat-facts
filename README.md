@@ -7,4 +7,4 @@ Facts: Click to uncover fun facts about cats with just a click.
 Photos: Enjoy random snapshots of the cutest cats around.
 
 ## Deployment
-Check out the live version and get your daily dose of cat cuteness at [your-deployment-url.netlify.app.](https://onlycatfacts.netlify.app/)
+Check out the live version and get your daily dose of cat cuteness at https://onlycatfacts.netlify.app/
