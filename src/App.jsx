@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
   const [fact, setFact] = useState("Meow")
-  const [imageURL, setImageURL] = useState("https://cataas.com/cat")
+  const [imageURL, setImageURL] = useState("🐱")
 
 
 
@@ -29,7 +29,7 @@ function App() {
 
             setFact(fact)
 
-            setImageURL(`https://cataas.com/cat?${Date.now()}`);
+            // setImageURL(`https://cataas.com/cat?${Date.now()}`);
 
           }
         }>
