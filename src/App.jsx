@@ -17,11 +17,20 @@ function App() {
     };
 
     const fetchImages = async () => {
-      const response = await fetch('https://api.thecatapi.com/v1/images/search?limit=50', {
+      const response = await fetch('https://api.thecatapi.com/v1/images/search?limit=15', {
         method: 'GET',
+        headers: {
+          'x-api-key': 'live_fXmHYRaBfbiC0HNMQ1IkPgJazPYb27ddM24DVfc7IYrVETfHinPiTno87Kaz8B0Y'
+        }
       });
       const json = await response.json();
-      setImageURL(json);
+      const urls = json.map(img => img.url);
+      setImageURL(urls);
+
+      urls.forEach(url => {
+        const img = new Image();
+        img.src = url;
+      });
     };
 
     fetchFacts();
@@ -41,7 +50,7 @@ function App() {
       <div className="card">
         <button onClick={() => {
           setCurrentFact(fact[Math.floor(Math.random() * 50)])
-          setCurrentImgUrl(imageURL[Math.floor(Math.random() * imageURL.length)].url)
+          setCurrentImgUrl(imageURL[Math.floor(Math.random() * imageURL.length)])
         }
         }>
           Click for Cat Fact
