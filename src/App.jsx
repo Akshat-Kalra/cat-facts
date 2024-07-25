@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
   const [fact, setFact] = useState("Meow")
-  const [imageURL, setImageURL] = useState("🐱")
+  // const [imageURL, setImageURL] = useState("🐱")
 
 
 
@@ -11,7 +11,7 @@ function App() {
     <>
       <div>
         
-      <img src={imageURL} style={{ width: '300px', height: 'auto' }}/>
+{/*       <img src={imageURL} style={{ width: '300px', height: 'auto' }}/> */}
       
       </div>
       <h1>{fact}</h1>
