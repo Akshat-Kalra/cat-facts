@@ -5,7 +5,7 @@ function App() {
   const [fact, setFact] = useState([])
   const [imageURL, setImageURL] = useState([])
   const [currentFact, setCurrentFact] = useState("Meow")
-  const [currentImgUrl, setCurrentImgUrl] = useState("")
+  const [currentImgUrl, setCurrentImgUrl] = useState("https://cataas.com/cat/says/Welcome%20to%20Only%20Cat%20Facts?fontSize=50&fontColor=red")
 
   useEffect(() => {
     const fetchFacts = async () => {
