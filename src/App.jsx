@@ -7,7 +7,6 @@ function App() {
   const [imageURL, setImageURL] = useState([])
   const [currentFact, setCurrentFact] = useState("Meow")
   const [currentImgUrl, setCurrentImgUrl] = useState(welcome)
-
   useEffect(() => {
     const fetchFacts = async () => {
       const response = await fetch('https://meowfacts.herokuapp.com/?count=50', {
