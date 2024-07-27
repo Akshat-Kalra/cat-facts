@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-// import welcome from 'src/assets/welcome.jpeg';
+import welcome from './assets/welcome.jpeg';
 
 function App() {
   const [fact, setFact] = useState([])
   const [imageURL, setImageURL] = useState([])
   const [currentFact, setCurrentFact] = useState("Meow")
-  const [currentImgUrl, setCurrentImgUrl] = useState("src/assets/welcome.jpeg")
+  const [currentImgUrl, setCurrentImgUrl] = useState(welcome)
 
   useEffect(() => {
     const fetchFacts = async () => {
